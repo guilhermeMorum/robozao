@@ -12,11 +12,20 @@ Depois disso, se for o primeiro acesso, é preciso criar a conta de administrado
 #### Robozão
 Depois que o Rocket estiver de pé, só rodar o init.sh na root do projeto que ele faz o trabalho pra você.
 
-## Links Úteis
-https://github.com/RocketChat/hubot-natural
-https://github.com/RocketChat/hubot-rocketchat-boilerplate
-https://github.com/RocketChat/hubot-rocketchat
-https://github.com/RocketChat/Rocket.Chat.Ops
+## Personalização
+As instruções que devem ser processadas com linguagem natural devem ser incluídos no diretório data, dentro de algum arquivo .yml.
+As demais instruções podem ser colocadas no diretório sccripts, dentro de algum arquivo .coffee;
 
-https://hubot.github.com/docs/
-https://github.com/hubotio/hubot/blob/master/docs/scripting.md#making-http-calls
+## Links Úteis
+#### RocketChat
+- https://github.com/RocketChat/hubot-natural
+- https://github.com/RocketChat/hubot-rocketchat-boilerplate
+- https://github.com/RocketChat/hubot-rocketchat
+- https://github.com/RocketChat/Rocket.Chat.Ops
+#### Hubot
+- https://hubot.github.com/docs/
+- https://github.com/hubotio/hubot/blob/master/docs/scripting.md#making-http-calls
+#### Heartbot
+- https://github.com/digitalocean/heartbot#interactions
+#### Coffeescript
+- https://coffeescript.org/
