@@ -11,7 +11,7 @@ err_nodes = 0
 
 actionHandler.registerActions = (config) ->
   for action in fs.readdirSync(actionsPath).sort()
-    action_name = action.replace /\.coffee$/, ''
+    action_name = action.replace /\.js$/, ''
     actions[action_name] = require path.join actionsPath, action
 
   for interaction in config.interactions

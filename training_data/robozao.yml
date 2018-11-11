@@ -6,14 +6,7 @@ interactions:
       - salva minha vida
       - salva eu
       - me salva
-      - biscoito
     answer:
       - estou à caminho
     context: clear
-    action: teste
-
-  - name: global-teste
-    hear: cu
-    answer: tobinha
-    action: teste
-
+    action: robozao

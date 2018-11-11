@@ -52,7 +52,7 @@ services:
       - ROCKETCHAT_ROOM=GENERAL
       - ROCKETCHAT_USER=bot
       - ROCKETCHAT_PASSWORD=botpassword
-      - BOT_NAME=Robozão
+      - BOT_NAME=robozao
   # you can add more scripts as you'd like here, they need to be installable by npm
       - EXTERNAL_SCRIPTS=hubot-help,hubot-seen,hubot-links,hubot-diagnostics
     depends_on:
