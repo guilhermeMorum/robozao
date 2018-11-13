@@ -126,6 +126,5 @@ tags
 # Hubot files
 .editorconfig
 .hubot_history
-bin/
 chat/
 launch.sh
