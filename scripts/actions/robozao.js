@@ -1,4 +1,5 @@
 ref = require('../lib/common');
+RestUtil = require('../lib/restUtil');
 
 class Robozao {
 
@@ -23,14 +24,29 @@ class Robozao {
 
 
   process(msg) {
-    console.info('MENSAGEM: ', msg);
-    var command, ref1;
+    var sendMessages = this.sendMessages;
+    var stringElseRandomKey = this.stringElseRandomKey;
+    var baseUrl = 'http://localhost:8081/servicos/api/public/comum/robozao';
+    var ref1;
+    var command = ((ref1 = this.interaction.command) != null ? ref1.toLowerCase() : void 0) || false;;
+    switch(command){
+      case 'ola':
+        RestUtil.get(msg, baseUrl+'/ola', function(data){
+    	  sendMessages(stringElseRandomKey(data), msg);
+        });
+        break;
+      case 'adeus':
+        RestUtil.get(msg, baseUrl+'/adeus', function(data){
+    	  sendMessages(stringElseRandomKey(data), msg);
+        });
+        break;
+    }
+    /*var command, ref1;
     this.sendMessages(this.stringElseRandomKey(this.interaction.answer), msg);
     command = ((ref1 = this.interaction.command) != null ? ref1.toLowerCase() : void 0) || false;
     switch (command) {
-      case 'transfer':
-        return null; // faz algo 
-    }
+      case 'transfer':        return null; // faz algo 
+    }*/
   };
 }
 

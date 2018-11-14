@@ -9,4 +9,48 @@ interactions:
     answer:
       - estou à caminho
     context: clear
+    command: adeus
     action: robozao
+    
+  - name: ola-robozao
+    expect:
+     - ola
+     - oi
+     - cade tu
+    command: ola
+    action: robozao
+    
+  - name: teste-comeco
+    expect:
+      - bora fazer uma suruba
+      - bora fazer um bacanal
+      - eae bora colar
+      - bora fazer um bukkake
+    answer:
+      - bora, que dia?
+      - soooooh, manda quando
+    next:
+      trust: .6
+      interactions:
+        - surubao
+      error:
+        - error-suruba
+    action: respond
+        
+  - name: surubao
+    expect:
+      - amanha
+      - hoje
+      - qualquer dia
+      - sempre
+    answer:
+      - BISCOITO
+      - SOOOOOH BISCOITO
+    action: respond
+    
+  - name: error-suruba
+    answer:
+      - entendi nao, comédia
+      - saai fora doido, não sou moço disso
+    context: clear
+    action: error

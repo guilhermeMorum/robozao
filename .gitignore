@@ -1,8 +1,8 @@
 ### Rocketchat ###
 
 # Generated during the docker-compose up
-docker/data
-docker/uploads
+data
+uploads
 
 # Created by https://www.gitignore.io/api/vim,node,macos,linux
 
