@@ -10,7 +10,7 @@ interactions:
       - estou à caminho
     context: clear
     command: adeus
-    action: robozao
+    action: respond
     
   - name: ola-robozao
     expect:
@@ -18,7 +18,7 @@ interactions:
      - oi
      - cade tu
     command: ola
-    action: robozao
+    action: respond
     
   - name: teste-comeco
     expect:
